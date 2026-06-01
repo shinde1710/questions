@@ -73,6 +73,67 @@
         font-size: 14px;
       }
 
+      .difficulty-section {
+        margin-top: 14px;
+        background: #0f172a;
+        border-radius: 10px;
+        padding: 12px 14px;
+        border: 1px solid #334155;
+      }
+
+      .difficulty-title {
+        font-size: 12px;
+        font-weight: bold;
+        color: #94a3b8;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+      }
+
+      .difficulty-grades {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .grade-badge {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #1e3a5f;
+        border-radius: 8px;
+        padding: 6px 10px;
+        min-width: 52px;
+      }
+
+      .grade-label {
+        font-size: 11px;
+        color: #7dd3fc;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+
+      .grade-bar-wrap {
+        width: 100%;
+        background: #1e293b;
+        border-radius: 4px;
+        height: 6px;
+        margin-bottom: 3px;
+        overflow: hidden;
+      }
+
+      .grade-bar {
+        height: 6px;
+        border-radius: 4px;
+        transition: width 0.3s;
+      }
+
+      .grade-pct {
+        font-size: 11px;
+        color: #e2e8f0;
+        font-weight: 600;
+      }
+
       img {
         margin-top: 15px;
         max-width: 300px;
@@ -23368,54 +23429,8 @@
             image: "46.webp",
             mandatory: true,
           },
-          {
-            id: 1358,
-            text: "Jigsaw Puzzles, question 9: Which of the answer choices correctly shows how the puzzle pieces fit together?",
-            options: [
-              "Option A",
-              "Option B",
-              "Option C",
-              "Option D",
-              "Option E",
-            ],
-            correct: 0,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "Q1358.webp",
-            mandatory: true,
-          },
-          {
-            id: 1359,
-            text: "Jigsaw Puzzles, question 10: Which of the answer choices correctly shows how the puzzle pieces fit together?",
-            options: [
-              "Option A",
-              "Option B",
-              "Option C",
-              "Option D",
-              "Option E",
-            ],
-            correct: 0,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "Q1359.webp",
-            mandatory: true,
-          },
+          
+          
           {
             id: 1371,
             text: "Looking at a 3D arrangement of cubes where some are hidden, how many total blocks are in the stack?",
@@ -23596,24 +23611,7 @@
             image: "54.webp",
             mandatory: true,
           },
-          {
-            id: 1387,
-            text: "How many other blocks is Block A touching in the 3D arrangement?",
-            options: ["2", "3", "4", "5", "6"],
-            correct: 1,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "Q1387.webp",
-            mandatory: true,
-          },
+          
           {
             id: 1388,
             text: "Making Rectangular Boxes, question 1: Which of the flat patterns can be folded to make the rectangular box shown?",
@@ -24433,29 +24431,6 @@
               "Shopping mall",
               "Springfield High School",
             ],
-            correct: 3,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "97.webp",
-            mandatory: true,
-          },
-          {
-            id: 1444,
-            text: "You are at Springfield High School. Going north two blocks, you would be at:",
-            options: [
-              "Gorgas Ave.",
-              "Eaton Ave.",
-              "Eastern Ave.",
-              "Rogers Ave.",
-            ],
             correct: 1,
             dimension: "Spatial Aptitude",
             difficulty: {
@@ -24467,7 +24442,30 @@
               11: 0.14,
               12: 0.06,
             },
-            image: "97.webp",
+            image: "f.webp",
+            mandatory: true,
+          },
+          {
+            id: 1444,
+            text: "You are at Springfield High School. Going north two blocks, you would be at:",
+            options: [
+              "Gorgas Ave.",
+              "Eaton Ave.",
+              "Eastern Ave.",
+              "Rogers Ave.",
+            ],
+            correct: 2,
+            dimension: "Spatial Aptitude",
+            difficulty: {
+              6: 0.74,
+              7: 0.62,
+              8: 0.5,
+              9: 0.38,
+              10: 0.26,
+              11: 0.14,
+              12: 0.06,
+            },
+            image: "b.webp",
             mandatory: true,
           },
           {
@@ -25628,30 +25626,7 @@
             image: "145.webp",
             mandatory: true,
           },
-          {
-            id: 1522,
-            text: "Parts Assembly, question 3: The drawings show 3–6 parts with labeled connection points. Which assembled drawing correctly shows these parts joined together?",
-            options: [
-              "Assembly A",
-              "Assembly B",
-              "Assembly C",
-              "Assembly D",
-              "Assembly E",
-            ],
-            correct: 2,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "146.webp",
-            mandatory: true,
-          },
+          
           {
             id: 1523,
             text: "Parts Assembly, question 4: The drawings show 3–6 parts with labeled connection points. Which assembled drawing correctly shows these parts joined together?",
@@ -26604,114 +26579,7 @@
             image: "174.webp",
             mandatory: true,
           },
-          {
-            id: 1578,
-            text: "Cut-Ups, question 1: Which set of pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 1,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "175.webp",
-            mandatory: true,
-          },
-          {
-            id: 1579,
-            text: "Cut-Ups, question 2: Which set of pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 2,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "176.webp",
-            mandatory: true,
-          },
-          {
-            id: 1580,
-            text: "Cut-Ups, question 3: Which set of pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 0,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "177.webp",
-            mandatory: true,
-          },
-          {
-            id: 1581,
-            text: "Cut-Ups, question 4: Which set of pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 3,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "178.webp",
-            mandatory: true,
-          },
-          {
-            id: 1582,
-            text: "Cut-Ups, question 5: Which set of pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 1,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "179.webp",
-            mandatory: true,
-          },
-          {
-            id: 1583,
-            text: "Cut-Ups, question 6: Which set of pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 0,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "180.webp",
-            mandatory: true,
-          },
+          
           {
             id: 1584,
             text: "Cut-Ups, question 7: Which set of pieces can be assembled to form the target shape?",
@@ -26886,54 +26754,7 @@
             image: "188.webp",
             mandatory: true,
           },
-          {
-            id: 1616,
-            text: "Making Rectangular Boxes, question 1: Which flat pattern can be folded to make the rectangular box shown?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 3,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "190.webp",
-            mandatory: true,
-          },
-          {
-            id: 1617,
-            text: "Making Rectangular Boxes, question 2: Which flat pattern can be folded to make the rectangular box shown?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 0,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "191.webp",
-            mandatory: true,
-          },
+          
           {
             id: 1631,
             text: "Paper Folding (Shape Known), question 6: Which solid shape is formed when this flat pattern is folded?",
@@ -27584,7 +27405,7 @@
           },
           {
             id: 1677,
-            text: "Matching Shapes, question 1: Which labeled shape exactly matches the target shape?",
+            text: "Matching Shapes, question 1: Which labeled shape exactly matches the target(14) shape?",
             options: [
               "Figure A",
               "Figure B",
@@ -27595,7 +27416,7 @@
               "Figure G",
               "Figure H",
             ],
-            correct: 0,
+            correct: 4,
             dimension: "Spatial Aptitude",
             difficulty: {
               6: 0.58,
@@ -27611,7 +27432,7 @@
           },
           {
             id: 1678,
-            text: "Matching Shapes, question 2: Which labeled shape exactly matches the target shape?",
+            text: "Matching Shapes, question 2: Which labeled shape exactly matches the target(4) shape?",
             options: [
               "Figure A",
               "Figure B",
@@ -27638,88 +27459,7 @@
           },
           {
             id: 1679,
-            text: "Matching Shapes, question 3: Which labeled shape exactly matches the target shape?",
-            options: [
-              "Figure A",
-              "Figure B",
-              "Figure C",
-              "Figure D",
-              "Figure E",
-              "Figure F",
-              "Figure G",
-              "Figure H",
-            ],
-            correct: 2,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.58,
-              7: 0.46,
-              8: 0.34,
-              9: 0.22,
-              10: 0.1,
-              11: 0.04,
-              12: 0.02,
-            },
-            image: "215.webp",
-            mandatory: true,
-          },
-          {
-            id: 1680,
-            text: "Matching Shapes, question 4: Which labeled shape exactly matches the target shape?",
-            options: [
-              "Figure A",
-              "Figure B",
-              "Figure C",
-              "Figure D",
-              "Figure E",
-              "Figure F",
-              "Figure G",
-              "Figure H",
-            ],
-            correct: 3,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.58,
-              7: 0.46,
-              8: 0.34,
-              9: 0.22,
-              10: 0.1,
-              11: 0.04,
-              12: 0.02,
-            },
-            image: "215.webp",
-            mandatory: true,
-          },
-          {
-            id: 1681,
-            text: "Matching Shapes, question 5: Which labeled shape exactly matches the target shape?",
-            options: [
-              "Figure A",
-              "Figure B",
-              "Figure C",
-              "Figure D",
-              "Figure E",
-              "Figure F",
-              "Figure G",
-              "Figure H",
-            ],
-            correct: 4,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.58,
-              7: 0.46,
-              8: 0.34,
-              9: 0.22,
-              10: 0.1,
-              11: 0.04,
-              12: 0.02,
-            },
-            image: "215.webp",
-            mandatory: true,
-          },
-          {
-            id: 1682,
-            text: "Matching Shapes, question 6: Which labeled shape exactly matches the target shape?",
+            text: "Matching Shapes, question 3: Which labeled shape exactly matches the target(29) shape?",
             options: [
               "Figure A",
               "Figure B",
@@ -27745,8 +27485,8 @@
             mandatory: true,
           },
           {
-            id: 1683,
-            text: "Matching Shapes, question 7: Which labeled shape exactly matches the target shape?",
+            id: 1680,
+            text: "Matching Shapes, question 4: Which labeled shape exactly matches the target(17) shape?",
             options: [
               "Figure A",
               "Figure B",
@@ -27757,7 +27497,88 @@
               "Figure G",
               "Figure H",
             ],
-            correct: 6,
+            correct: 2,
+            dimension: "Spatial Aptitude",
+            difficulty: {
+              6: 0.58,
+              7: 0.46,
+              8: 0.34,
+              9: 0.22,
+              10: 0.1,
+              11: 0.04,
+              12: 0.02,
+            },
+            image: "215.webp",
+            mandatory: true,
+          },
+          {
+            id: 1681,
+            text: "Matching Shapes, question 5: Which labeled shape exactly matches the target(15) shape?",
+            options: [
+              "Figure A",
+              "Figure B",
+              "Figure C",
+              "Figure D",
+              "Figure E",
+              "Figure F",
+              "Figure G",
+              "Figure H",
+            ],
+            correct: 0,
+            dimension: "Spatial Aptitude",
+            difficulty: {
+              6: 0.58,
+              7: 0.46,
+              8: 0.34,
+              9: 0.22,
+              10: 0.1,
+              11: 0.04,
+              12: 0.02,
+            },
+            image: "215.webp",
+            mandatory: true,
+          },
+          {
+            id: 1682,
+            text: "Matching Shapes, question 6: Which labeled shape exactly matches the target(15) shape?",
+            options: [
+              "Figure A",
+              "Figure B",
+              "Figure C",
+              "Figure D",
+              "Figure E",
+              "Figure F",
+              "Figure G",
+              "Figure H",
+            ],
+            correct: 3,
+            dimension: "Spatial Aptitude",
+            difficulty: {
+              6: 0.58,
+              7: 0.46,
+              8: 0.34,
+              9: 0.22,
+              10: 0.1,
+              11: 0.04,
+              12: 0.02,
+            },
+            image: "215.webp",
+            mandatory: true,
+          },
+          {
+            id: 1683,
+            text: "Matching Shapes, question 7: Which labeled shape exactly matches the target(25) shape?",
+            options: [
+              "Figure A",
+              "Figure B",
+              "Figure C",
+              "Figure D",
+              "Figure E",
+              "Figure F",
+              "Figure G",
+              "Figure H",
+            ],
+            correct: 2,
             dimension: "Spatial Aptitude",
             difficulty: {
               6: 0.58,
@@ -27773,7 +27594,7 @@
           },
           {
             id: 1684,
-            text: "Matching Shapes, question 8: Which labeled shape exactly matches the target shape?",
+            text: "Matching Shapes, question 8: Which labeled shape exactly matches the target(27) shape?",
             options: [
               "Figure A",
               "Figure B",
@@ -27781,10 +27602,10 @@
               "Figure D",
               "Figure E",
               "Figure F",
-              "Figure G",
+              "Figure S",
               "Figure H",
             ],
-            correct: 7,
+            correct: 6,
             dimension: "Spatial Aptitude",
             difficulty: {
               6: 0.58,
@@ -27996,186 +27817,7 @@
             image: "223.webp",
             mandatory: true,
           },
-          {
-            id: 1697,
-            text: "Cut-Ups, question 1: Which set of cut pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 0,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "224.webp",
-            mandatory: true,
-          },
-          {
-            id: 1698,
-            text: "Cut-Ups, question 2: Which set of cut pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 1,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "225.webp",
-            mandatory: true,
-          },
-          {
-            id: 1699,
-            text: "Cut-Ups, question 3: Which set of cut pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 2,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "226.webp",
-            mandatory: true,
-          },
-          {
-            id: 1700,
-            text: "Cut-Ups, question 4: Which set of cut pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 2,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "227.webp",
-            mandatory: true,
-          },
-          {
-            id: 1701,
-            text: "Cut-Ups, question 5: Which set of cut pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 1,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "228.webp",
-            mandatory: true,
-          },
-          {
-            id: 1702,
-            text: "Cut-Ups, question 6: Which set of cut pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 3,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "229.webp",
-            mandatory: true,
-          },
-          {
-            id: 1703,
-            text: "Cut-Ups, question 7: Which set of cut pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 0,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "230.webp",
-            mandatory: true,
-          },
-          {
-            id: 1704,
-            text: "Cut-Ups, question 8: Which set of cut pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 3,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "231.webp",
-            mandatory: true,
-          },
-          {
-            id: 1705,
-            text: "Cut-Ups, question 9: Which set of cut pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 2,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "232.webp",
-            mandatory: true,
-          },
-          {
-            id: 1706,
-            text: "Cut-Ups, question 10: Which set of cut pieces can be assembled to form the target shape?",
-            options: ["Set A", "Set B", "Set C", "Set D"],
-            correct: 1,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.66,
-              7: 0.54,
-              8: 0.42,
-              9: 0.3,
-              10: 0.18,
-              11: 0.08,
-              12: 0.02,
-            },
-            image: "233.webp",
-            mandatory: true,
-          },
+          
           {
             id: 1708,
             text: "Hole Punching, question 2: A folded paper is punched as shown. Which pattern results when it is unfolded?",
@@ -28198,234 +27840,6 @@
               12: 0.06,
             },
             image: "234.webp",
-            mandatory: true,
-          },
-          {
-            id: 1709,
-            text: "Hole Punching, question 3: A folded paper is punched as shown. Which pattern results when it is unfolded?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 4,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "235.webp",
-            mandatory: true,
-          },
-          {
-            id: 1710,
-            text: "Hole Punching, question 4: A folded paper is punched as shown. Which pattern results when it is unfolded?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 1,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "236.webp",
-            mandatory: true,
-          },
-          {
-            id: 1711,
-            text: "Hole Punching, question 5: A folded paper is punched as shown. Which pattern results when it is unfolded?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 3,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "237.webp",
-            mandatory: true,
-          },
-          {
-            id: 1712,
-            text: "Hole Punching, question 6: A folded paper is punched as shown. Which pattern results when it is unfolded?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 0,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "238.webp",
-            mandatory: true,
-          },
-          {
-            id: 1713,
-            text: "Hole Punching, question 7: A folded paper is punched as shown. Which pattern results when it is unfolded?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 2,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "239.webp",
-            mandatory: true,
-          },
-          {
-            id: 1714,
-            text: "Hole Punching, question 8: A folded paper is punched as shown. Which pattern results when it is unfolded?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 4,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "240.webp",
-            mandatory: true,
-          },
-          {
-            id: 1715,
-            text: "Hole Punching, question 9: A folded paper is punched as shown. Which pattern results when it is unfolded?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 1,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "241.webp",
-            mandatory: true,
-          },
-          {
-            id: 1716,
-            text: "Hole Punching, question 10: A folded paper is punched as shown. Which pattern results when it is unfolded?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 3,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "242.webp",
-            mandatory: true,
-          },
-          {
-            id: 1717,
-            text: "Hidden Blocks Practice Test, Q1: How many blocks total in the stack?",
-            options: ["7", "8", "9", "10", "11"],
-            correct: 2,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "243.webp",
-            mandatory: true,
-          },
-          {
-            id: 1718,
-            text: "Hidden Blocks Practice Test, Q2: How many total blocks in this arrangement?",
-            options: ["9", "10", "11", "12", "13"],
-            correct: 2,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "244.webp",
             mandatory: true,
           },
           {
@@ -28520,9 +27934,9 @@
           },
           {
             id: 1724,
-            text: "Counting Touching Blocks, Q1: How many blocks does the marked block touch?",
+            text: "Counting Touching Blocks, Q1: How many blocks does touches A?",
             options: ["1", "2", "3", "4", "5"],
-            correct: 1,
+            correct: 0,
             dimension: "Spatial Aptitude",
             difficulty: {
               6: 0.74,
@@ -28608,222 +28022,7 @@
             image: "256.webp",
             mandatory: true,
           },
-          {
-            id: 1733,
-            text: "Making Rectangular Boxes, question 2: Which flat net folds into the rectangular box shown?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 0,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "258.webp",
-            mandatory: true,
-          },
-          {
-            id: 1734,
-            text: "Making Rectangular Boxes, question 3: Which flat net folds into the rectangular box shown?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 2,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "259.webp",
-            mandatory: true,
-          },
-          {
-            id: 1735,
-            text: "Making Rectangular Boxes, question 4: Which flat net folds into the rectangular box shown?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 1,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "260.webp",
-            mandatory: true,
-          },
-          {
-            id: 1736,
-            text: "Making Rectangular Boxes, question 5: Which flat net folds into the rectangular box shown?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 3,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "261.webp",
-            mandatory: true,
-          },
-          {
-            id: 1737,
-            text: "Making Rectangular Boxes, question 6: Which flat net folds into the rectangular box shown?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 4,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "262.webp",
-            mandatory: true,
-          },
-          {
-            id: 1738,
-            text: "Making Rectangular Boxes, question 7: Which flat net folds into the rectangular box shown?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 0,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "263.webp",
-            mandatory: true,
-          },
-          {
-            id: 1739,
-            text: "Making Rectangular Boxes, question 8: Which flat net folds into the rectangular box shown?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 2,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "264.webp",
-            mandatory: true,
-          },
-          {
-            id: 1740,
-            text: "Making Rectangular Boxes, question 9: Which flat net folds into the rectangular box shown?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 3,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "265.webp",
-            mandatory: true,
-          },
-          {
-            id: 1741,
-            text: "Making Rectangular Boxes, question 10: Which flat net folds into the rectangular box shown?",
-            options: [
-              "Pattern A",
-              "Pattern B",
-              "Pattern C",
-              "Pattern D",
-              "Pattern E",
-            ],
-            correct: 1,
-            dimension: "Spatial Aptitude",
-            difficulty: {
-              6: 0.74,
-              7: 0.62,
-              8: 0.5,
-              9: 0.38,
-              10: 0.26,
-              11: 0.14,
-              12: 0.06,
-            },
-            image: "266.webp",
-            mandatory: true,
-          },
+          
           {
             id: 1743,
             text: "Paper Folding (Shape Known), question 2: When this flat net is folded, which solid shape does it form?",
@@ -34503,9 +33702,31 @@
       }
 
       <div class="meta">
-        Dimension: ${q.dimension || "N/A"} |
-        Difficulty: ${q.difficulty || "N/A"}
+        Dimension: ${q.dimension || "N/A"}
       </div>
+
+      ${(() => {
+        const d = q.difficulty;
+        if (!d || typeof d !== 'object') return `<div class="meta">Difficulty: ${d || "N/A"}</div>`;
+        const colorFor = (pct) => {
+          if (pct <= 0.25) return '#16a34a';
+          if (pct <= 0.50) return '#ca8a04';
+          return '#dc2626';
+        };
+        const badges = Object.entries(d).map(([grade, prob]) => {
+          const pct = Math.round(prob * 100);
+          const color = colorFor(prob);
+          return `<div class="grade-badge">
+            <div class="grade-label">Gr ${grade}</div>
+            <div class="grade-bar-wrap"><div class="grade-bar" style="width:${pct}%;background:${color}"></div></div>
+            <div class="grade-pct">${pct}%</div>
+          </div>`;
+        }).join('');
+        return `<div class="difficulty-section">
+          <div class="difficulty-title">⚠ Difficulty </div>
+          <div class="difficulty-grades">${badges}</div>
+        </div>`;
+      })()}
     `;
 
           container.appendChild(card);
